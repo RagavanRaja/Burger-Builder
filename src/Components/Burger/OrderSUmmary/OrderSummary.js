@@ -19,7 +19,7 @@ const orderSummary=(props)=>{
             <p>Delicious Burger With Following Ingredients </p>
             <ul>{ingredientSummary}</ul>
             <p>Continue to Checkout??</p>
-            <Button btnType="Danger" clicked={props.purchaseCanceled}>Cancelled</Button>
+            <Button btnType="Danger" clicked={props.purchaseCanceled}>Cancel</Button>
             <Button btnType="Success" clicked={props.purchaseContinue}>Continue</Button>
         </Aux>
     );
