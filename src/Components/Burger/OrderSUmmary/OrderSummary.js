@@ -16,11 +16,11 @@ const orderSummary=(props)=>{
     return(
         <Aux>
             <h3>Your Order</h3>
-            <p>Delicious Burger With Following Ingredients</p>
+            <p>Delicious Burger With Following Ingredients </p>
             <ul>{ingredientSummary}</ul>
             <p>Continue to Checkout??</p>
-            <Button btnType="Danger">Cancel</Button>
-            <Button btnType="Success">Continue</Button>
+            <Button btnType="Danger" clicked={props.purchaseCanceled}>Cancelled</Button>
+            <Button btnType="Success" clicked={props.purchaseContinue}>Continue</Button>
         </Aux>
     );
 }
